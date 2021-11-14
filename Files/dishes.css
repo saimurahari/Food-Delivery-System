@@ -504,6 +504,54 @@ section .restaurants table td h4:hover{
 section .restaurants table td img:hover{
     transform: scale(1.2);
 }
+.about{
+    height: 100%;
+    width: 0;
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.about a{
+    padding: 60px;
+    text-align: right;
+    text-decoration: none;
+    font-size: 36px;
+    color: red;
+    display: block;
+    transition: 0.3s;
+}
+.about a:hover, .about a:focus{
+    color:#f1f1f1;
+
+}
+.about .closebtn{
+    position:abosolute;
+    top:20px;
+    right:45px;
+    font-size: 60px;
+    
+}
+.about a .closebtn{
+    color:white;
+}
+.about-overlay h1{
+    text-align: center;
+    color: white;
+    font-size: 45px;
+
+}
+.about-overlay p{
+    text-align: center;
+    font-size: 18px;
+    color:white;
+
+}
+
 
 
 
