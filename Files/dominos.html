@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominos | Pizza</title>
+    <link rel="icon" href="./Images/Restaurants/download.png" type="image/icon type">
+<link rel="stylesheet" href="dominos.css">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <!--Header section start-->
+    <header>
+        <a href="#" class="logo"><i class="fa fa-utensils"></i>Foodies.</a>
+        <nav class="navbar">
+            <a class="active" href="./home.html">Home</a>
+            <a href="./dishes.html">dishes</a>
+            <a href="#" onclick="openAbout()">about</a>
+            
+            <a class="feed" id="feedback">feedback</a>
+            <a href="#">Orders</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <a href="login.html" class="fas fa-sign-in-alt"></a>
+            
+        </div>
+
+         <!--search form-->
+    <form action="" id="search-form">
+        <input type="search" placeholder="search here..." name="" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close1"></i>
+    </form>
+    <!--Search Form ends-->
+    </header>
+
+<!--Rating Form starts-->
+
+<div class="back">
+    <div class="container1" id="co1">
+        <div class="post">
+            <div class="text">Thanks for Rating us!</div>
+            <div class="edit">Edit</div>
+            <i class="fas fa-times" id="close"></i>
+    
+        </div>
+        <div class="star-widget">
+        <input type="radio" name="rate" id="rate-5">
+        <label for="rate-5" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-4">
+        <label for="rate-4" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-3">
+        <label for="rate-3" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-2">
+        <label for="rate-2" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-1">
+        <label for="rate-1" class="fas fa-star"></label>
+        <form action="#">
+            <i class="fas fa-times" id="close"></i>
+            <h4></h4>
+            <div class="textarea">
+                <textarea cols="30" placeholder="Describe your experience"></textarea>
+    
+            </div>
+            
+            <div class="btn">
+                <button type="submit">Post</button>
+            </div>
+        </form>
+        </div>    
+    </div>
+    </div>
+<!--Rating form ends-->
+<!--side bar-->
+
+<nav class="sidebar">
+    <div class="text">
+    <a href="./dominos.html"><i class="fa fa-home"></i></a>
+    <ul>
+        <li><a href="#pizza" onclick="myfun()">Veg Pizza</a></li>
+        <li><a href="#nonpizza" onclick="myfunction()">Non-veg Pizza</a></li>
+        <li><a href="#Mania" onclick="myroti()">Pizza Mania</a></li>
+   
+    </ul>
+</div>
+</nav>
+<!--Side bar ends-->
+<section class="home" id="home">
+    <div class="barb">
+    <h2><img src="./Images/Restaurants/dominos_social_logo.jpg" height="350"></h2>
+    <div class="cont">
+        <iframe width="420" height="315"
+src="https://www.youtube.com/embed/wj9NMpwVugQ?autoplay=1&mute=1&loop=1&playlist=wj9NMpwVugQ&loop=1">
+</iframe>
+        </div>
+        </div>
+</section>
+
+<section class="pizzamania" id="mania">
+    <h2 class="dominos">Domino's</h2>
+    <hr class="line">
+    <h4>Pizza Mania</h4> 
+    <div class="box-mania">
+        <div class="box">
+            <img src="./Images/Dishes/veg-loaded.jpg">
+            <h3>veg-loaded</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹199</span>
+            <br>
+            <a href="#" class="btn">Add to cart</a>
+        </div>
+        <div class="box">
+            <img src="./Images/Dishes/cheesy-pizza.png">
+            <h3>Cheesy pizza</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹99</span>
+            <br>
+            <a href="#" class="btn">Add to cart</a>
+        </div>
+        <div class="box">
+            <img src="./Images/Dishes/capsicum pizza.jpg">
+            <h3>Capsicum Pizza</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹79</span>
+            <br>
+            <a href="#" class="btn">Add to cart</a>
+        </div>
+        <div class="box">
+            <img src="./Images/Dishes/onion_pizza.jpg">
+            <h3>Onion Pizza</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹65</span>
+            <br>
+            <a href="#" class="btn">Add to cart</a>
+        </div>
+        <div class="box">
+            <img src="./Images/Dishes/non-veg_loaded.jpg">
+            <h3>Non-Veg Loaded</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹165</span>
+            <br>
+            <a href="#" class="btn">Add to cart</a>
+        </div>
+        <div class="box">
+            <img src="./Images/Dishes/PepperBarbequeChicken.jpg">
+            <h3>Pepper BarbequeChicken</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹180</span>
+            <br>
+            <a href="#" class="btn">Add to cart</a>
+        </div>
+
+</section>
+
+<section class="nonveg" id="nonpizza">
+    <h2 class="dominos">Domino's</h2>
+    <hr class="line">
+    <h4>Non-Veg Pizza</h4> 
+    <div class="box-nonpizza">
+        <div class="box">
+            <img src="./Images/Dishes/Pepper_Barbeque_&_Onion.jpg">
+            <h3>Pepper Barbecue & Onion</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹439</span>
+            <br>
+            <a href="#" class="btn">Add to cart</a>
+        </div>
+        <div class="box">
+            <img src="./Images/Dishes/chicken-golden-delight.png">
+            <h3>Chicken Golden Delight</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹499</span>
+            <br>
+            <a href="#" class="btn">Add to cart</a>
+        </div>
+        <div class="box">
+            <img src="./Images/Dishes/chicken-fiesta.jpg">
+            <h3>Chicken Fiesta</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹220</span>
+            <br>
+            <a href="#" class="btn">Add to cart</a>
+        </div>
+        <div class="box">
+            <img src="./Images/Dishes/PepperBarbequeChicken.jpg">
+            <h3>Pepper Barbeque Chicken</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹439</span>
+            <br>
+            <a href="#" class="btn">Add to cart</a>
+        </div>
+        <div class="box">
+            <img src="./Images/Dishes/chicken-sausage.png">
+            <h3>Chicken Sausage</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹379</span>
+            <br>
+            <a href="#" class="btn">Add to cart</a>
+        </div>
+        <div class="box">
+            <img src="./Images/Dishes/Non-Veg_Supreme.jpg">
+            <h3>Non Veg Supreme</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹619</span>
+            <br>
+            <a href="#" class="btn">Add to cart</a>
+        </div>
+        <div class="box">
+            <img src="./Images/Dishes/indi-chicken-tikkapizza.jpg">
+            <h3>Indi Chicken Tikka</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹610</span>
+            <br>
+            <a href="#" class="btn">Add to cart</a>
+        </div>
+        <div class="box">
+            <img src="./Images/Dishes/keema-do-pizza.jpg">
+            <h3>Keema Do Pyaza</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹438</span>
+            <br>
+            <a href="#" class="btn">Add to cart</a>
+        </div>
+        <div class="box">
+            <img src="./Images/Dishes/Moroccan Spice Pasta Pizza - Non Veg.jpg">
+            <h3>Moroccan Spice Pasta Pizza - Non Veg</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹440</span>
+            <br>
+            <a href="#" class="btn">Add to cart</a>
+        </div>
+    </div>
+
+</section>
+
+<section class="veg" id="pizza">
+    <h2 class="dominos">Dominos</h2>
+    <hr class="line">
+    <h4>Veg-Pizza</h4>  
+    <div class="box-container">
+    <div class="box">
+        <img src="./Images/Dishes/double-chesse-margherita.png">
+        <h3>Double cheese marghherita</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+
+        </div>
+        <span>₹339</span>
+        <br>
+        <a href="#" class="btn">Add to cart</a>
+    </div>
+    <div class="box">
+        <img src="./Images/Dishes/fresh-veggie.jpg">
+        <h3>Fresh veggie Pizza</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+
+        </div>
+        <span>₹339</span>
+        <br>
+        <a href="#" class="btn">Add to cart</a>
+    </div>
+    <div class="box">
+        <img src="./Images/Dishes/margherita.jpg">
+        <h3>Margherita</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>₹199</span>
+        <br>
+        <a href="#" class="btn">Add to cart</a>
+
+    </div>
+    <div class="box">
+        <img src="./Images/Dishes/farmhouse.jpg">
+        <h3>Farm house</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>₹399</span>
+        <br>
+        <a href="#" class="btn">Add to cart</a>
+
+    </div>
+    <div class="box">
+        <img src="./Images/Dishes/peppy-paneer.jpg" >
+        <h3>Peppy Paneer</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>₹399</span>
+        <br>
+        <a href="#" class="btn">Add to cart</a>
+
+    </div>
+    <div class="box">
+        <img src="./Images/Dishes/mexican-greenwave.jpg">
+        <h3>Mexican Greenwave</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>₹399</span>
+        <br>
+        <a href="#" class="btn">Add to cart</a>
+
+    </div>
+    <div class="box">
+        <img src="./Images/Dishes/veggie-paradise.jpg">
+        <h3>Veggie Paradise</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>₹399</span>
+        <br>
+        <a href="#" class="btn">Add to cart</a>
+
+    </div>
+    <div class="box">
+        <img src="./Images/Dishes/IndianTandooriPaneer.jpg">
+        <h3>Indi Tandoori Panner</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>₹459</span>
+        <br>
+        <a href="#" class="btn">Add to cart</a>
+
+    </div>
+    <div class="box">
+        <img src="./Images/Dishes/Paneer_Makhni.jpg">
+        <h3>Paneer Makhani</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>₹459</span>
+        <br>
+        <a href="#" class="btn">Add to cart</a>
+
+    </div>
+    <div class="box">
+        <img src="./Images/Dishes/achari do pyaza.jpg">
+        <h3>Achari do Pyaza</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>₹140</span>
+        <br>
+        <a href="#" class="btn">Add to cart</a>
+
+    </div>
+    <div class="box">
+        <img src="./Images/Dishes/cheese-n-corn.png">
+        <h3>Cheese and corn Pizza</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>₹140</span>
+        <br>
+        <a href="#" class="btn">Add to cart</a>
+
+    </div>
+    <div class="box">
+        <img src="./Images/Dishes/cheese n tomato.png">
+        <h3>Cheese and Tomato</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>₹140</span>
+        <br>
+        <a href="#" class="btn">Add to cart</a>
+
+    </div>
+    
+    
+    
+    
+    
+    <div class="box">
+        <img src="./Images/Dishes/moroccan spice pasta pizza.jpg">
+        <h3>Moroccan Spice Pasta Pizza - Veg</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>₹110</span>
+        <br>
+        <a href="#" class="btn">Add to cart</a>
+
+    </div>
+    </div>
+    
+</section>
+<!--Footer Section-->
+<div id="about" class="about">
+    <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="about-overlay">
+        <h1>About us</h1>
+        <p>Launched in 2021, Our technology platform connects customers,<br> 
+        restaurant partners and delivery partners, serving their multiple needs. <br>
+        Customers use our platform to search and discover restaurants, read and write customer 
+        generated reviews and view and upload photos,<br> order food delivery, book a table and make 
+        payments while dining-out at restaurants. On the other hand,<br> we provide restaurant partners 
+        with industry-specific marketing tools which enable them to engage and acquire customers<br> to 
+        grow their business while also providing a reliable <br>and efficient last mile delivery service. 
+        We also operate a one-stop procurement solution, <br>Hyperpure, which supplies high quality ingredients 
+        and kitchen products to restaurant partners.<br> We also provide our delivery partners with transparent 
+        and flexible earning opportunities. </p>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            
+            <div class="footer-col">
+                <ul>
+                    <i class="fa fa-utensils"></i>
+                    <span>Foodies.</span>
+                </ul>
+                <div class="map">
+                    <ul>
+                        <i class="fa fa-map-marker"></i>
+                            <span>5th Floor,
+                                A-118,Sangareddy, Hyderabad, Telangana - 502001
+                            </span>
+                    </ul>
+                    </div>
+                <div class="mail">
+                    <ul>
+                        <i class="fas fa-inbox"></i>
+                        <span>
+                            support@foodies.com
+                        </span>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Foodies</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">Our services</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Payment policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">My orders</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Payment options</a></li>
+
+                </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Order Now</h4>
+                    <ul>
+                        <li><a href="#">Biryani's</a></li>
+                        <li><a href="#">Restaurants</a></li>
+                        <li><a href="#">Starters</a></li>
+                        <li><a href="#">Fast food</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+            </div>
+            
+
+</footer>
+
+<!--Home  ends-->
+
+
+<!--Java Script-->
+    <script>
+        let menu = document.querySelector('#menu-bars');
+        let navbar = document.querySelector('.navbar');
+        
+        menu.onclick = () => {
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('active');
+        }
+        window.onscroll=() => {
+            menu.classList.remove('fa-times');
+            navbar.classList.remove('active');
+        }
+        document.querySelector('#search-icon').onclick=() => {
+            document.querySelector('#search-form').classList.toggle('active');
+        }
+        document.querySelector('#close1').onclick=() => {
+            document.querySelector('#search-form').classList.toggle('active');
+        }
+        document.querySelector("#feedback").onclick=() =>{
+        document.querySelector("#co1").classList.toggle("active");
+    }
+        document.querySelector("#close").onclick=() =>{
+        document.querySelector("#co1").classList.toggle("active");
+
+    }
+    function myfun(){
+        document.getElementById("pizza").style.display="block";
+    }
+    function myfunction(){
+        document.getElementById("nonpizza").style.display="block";
+    }
+    function myroti(){
+        document.getElementById("mania").style.display="block";
+    }
+    function mycurry(){
+        document.getElementById("curry").style.display="block";
+    }
+        const btn = document.querySelector("button");
+        const post = document.querySelector(".post");
+        const widget = document.querySelector(".star-widget");
+        const editBtn = document.querySelector(".edit");
+    
+        btn.onclick = () =>{
+        widget.style.display = "none";
+        post.style.display = "block";
+        editBtn.onclick = () =>{
+            widget.style.display = "block";
+            post.style.display = "none";
+        }
+        return false;
+    }
+        function openAbout(){
+        document.getElementById("about").style.width = "100%";
+
+    }
+    function closeNav(){
+        document.getElementById("about").style.width = "0%";
+    }
+   
+       
+    </script>
+    <!--JavaScript ends -->
+
+</body>
+</html>
