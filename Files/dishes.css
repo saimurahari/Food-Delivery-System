@@ -440,70 +440,7 @@ form .btn button:hover{
     top:2rem; right:3rem;
     font-size: 20px;
 }
-section h1{
-    margin-top: 80px;
-    margin-left: 105px;
-    font-size: 40px;
-}
 
-section .res h2{
-    margin-left: 105px;
-    font-size:25px;
-}
-section .res hr.line{
-        border:none;
-        height: 20px;
-        width: 90%;
-        height: 50px;
-        margin-top: 0;
-        border-bottom: 1px solid #1f1209;
-        box-shadow: 0 20px 20px -20px #333;
-        margin: -50px auto 10px; 
-    
-}
-.checked{
-    color: orangered;
-}
-section h3{
-    margin-top:120px;
-    font-size: 45px;
-    margin-left: 80px;
-}
-section .restaurants{
-   
-    margin-left: 105px;
-}
-section .restaurants table{
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-}
-section .restaurants table td{
-    padding: 1rem 2rem;
-    align-items: center;
-    border-bottom: 1px solid rgb(153, 151, 151);
-    
-}
-section .restaurants table td a{
-    font-size: 1.7rem;
-    color: #1f1209;
-    
-}
-section .restaurants table td p{
-    font-size: 15px;
-}
-section .restaurants table td img{
-    border-radius: 5px;
-}
-section .restaurants table td h4{
-    padding-top: 20px;
-}
-section .restaurants table td h4:hover{
-    color: orangered;
-}
-section .restaurants table td img:hover{
-    transform: scale(1.2);
-}
 .about{
     height: 100%;
     width: 0;
@@ -551,6 +488,67 @@ section .restaurants table td img:hover{
     color:white;
 
 }
+section h1{
+    margin-left: 105px;
+    font-size: 30px;
+    color:orangered;
+}
+
+.barb{
+    margin-left: 100px;
+
+}
+.barb .box-container{
+    
+    align-items: center;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
+    gap:5.5rem;
+}
+.barb .box-container .box{
+    cursor: pointer;
+    margin-left: 2.5rem;
+    font-size: 1.2rem;
+    padding:2.5rem;
+    align-items: center;
+    background: #fff;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    
+}
+.barb .box-container .box h3{
+    font-size: 25px;
+}
+.barb .box-container .box:hover{
+    transform: scale(1.1);
+}
+.barb .box-container .box img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    
+}
+.barb .box-container .box span{
+    font-size: 20px;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    text-decoration: none;
+    background: orangered;
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+    color:white;
+}
+
 
 
 

@@ -9,13 +9,17 @@
 <link rel="stylesheet" href="home.css">
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
-<body>
+<body onload="myloader()">
+<div class="loader-container" id = "loader">
+    <img src="./Images/loader/loader.gif">
+    
+</div>
 
     <!--Header section start-->
     <header>
         <a href="#" class="logo"><i class="fa fa-utensils"></i>Foodies.</a>
         <nav class="navbar">
-            <a class="active" href="/Files/home.html">Home</a>
+            <a class="active" href="./home.html">Home</a>
             <a href="./dishes.html">dishes</a>
             <a href="#" onclick="openAbout()">about</a>
            
@@ -82,7 +86,7 @@
     <div class="spl">
         <h2>Our Specials</h2>
 </div>
-<div class=table>
+<div class="table">
     <a href="#"><img src="./Images/Dishes/Chicken-Biryani.jpg" height="150"><h4>Biryani</h4></a>
     <a href="#"><img src="./Images/Dishes/chicken.jpeg" height="150"><h4>Chicken Lolipop</h4></a>
     <a href="#"><img src="./Images/Dishes/panner tikka.jpg" height="150"><h4>Panner Tikka</h4></a>
@@ -95,7 +99,7 @@
 <div class="top-re">
     <h2>Top Restaurants</h2>
 </div>
-<div class=table1>
+<div class="table1">
     <a href="./Barbeque.html"><img src="./Images/Restaurants/barbeque.jpg" height="150"><h4>Barbeque</h4><p>tandoori, biryani, Starters</p></a>
     <a href="./mehfil.html"><img src="./Images/Restaurants/mehfil.jpg" height="150"><h4>Mehfil</h4><p>tandoori, biryani</p></a>
     <a href="./paradise.html"><img src="./Images/Restaurants/paradise.jpg" height="150"><h4>Paradise</h4><p>tandoori, biryani, Starters, deserts</p></a>
@@ -110,92 +114,197 @@
     <h2>16 Restaurants</h2>
     <hr class="line">
 </div>
-<div class="restaurants" id="res2">    
-    <table>
-    <tr>
-        <td align="center"><a href="./Barbeque.html"><img src="./Images/Restaurants/barbeque.jpg" height="180"><h4>Barbeque</h4><p>Starters,biryani,tandoori</p><span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>5</a></td>
-        <td align="center"><a href="./mehfil.html"><img src="./Images/Restaurants/mehfil.jpg" height="180"><h4>Mehfil Restaurant</h4><p>Starters,biryani,tandoori</p><span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>4 </a></td>
-        <td align="center"><a href="./dominos.html"><img src="./Images/Restaurants/dominos.jpg" height="180"><h4>Domino's</h4><p>Pizza, Burgers</p><span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>5</a></td>
-        <td align="center"><a href="./paradise.html"><img src="./Images/Restaurants/paradise.jpg" height="180"><h4>Paradise</h4><p>Starters,biryani,tandoori</p><span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>4 </a></td>
+<section class="barb" id="biryani">
+    <h1 class="barbeque">Restaurants</h1>
+    <hr class="line"> 
+    <div class="box-container">
+    <div class="box">
+        <a href="./barbeque.html"><img src="./Images/Restaurants/barbeque.jpg"></a>
+        <h3>Barbeque</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <br>
+            <p>Starters,biryani,tandoori</p>
 
-    </tr>
-   
-    <tr>
-        <td align="center"><a href="./ramkibandi.html"><img src="./Images/Restaurants/ramkibandi.jpg" height="180"><h4>Ram Ki Bandi</h4><p>Dosa, Idly</p><span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>5</a></td>
-        <td align="center"><a href="./vantilu.html"><img src="./Images/Restaurants/vantilu.jpeg" height="180"><h4>Vantillu</h4><p>Starters,biryani,tandoori</p><span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>4 </a></td>
-        <td align="center"><a href="./platform65.html"><img src="./Images/Restaurants/platform65.jpg" height="180"><h4>Platform 65</h4><p>Starters,biryani,tandoori</p><span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>4 </a></td>
-        <td align="center"><a href="./hoteladaab.html"><img src="./Images/Restaurants/aadab.png" height="180"><h4>Hotel Aadab</h4><p>Starters,biryani,tandoori</p><span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>4 </a></td>
+        </div>
+        </div>
+        <div class="box">
+        <a href="./mehfil.html"><img src="./Images/Restaurants/mehfil.jpg"></a>
+        <h3>Mehfil</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <br>
+            <p>Starters,biryani,tandoori</p>
 
-            
-    </tr>
+        </div>
+        </div>
+        <div class="box">
+        <a href="./dominos.html"><img src="./Images/Restaurants/dominos.jpg"></a>
+        <h3>Domino's</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <br>
+            <p>Pizza ,Burger, Bread</p>
+
+        </div>
+        </div>
+        <div class="box">
+        <a href="./paradise.html"><img src="./Images/Restaurants/paradise.jpg"></a>
+        <h3>Paradise</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <br>
+            <p>Starters,biryani,tandoori</p>
+
+        </div>
+        </div>
+        <div class="box">
+        <a href="./ramkibandi.html"><img src="./Images/Restaurants/ramkibandi.jpg"></a>
+        <h3>Ram ki Bandi</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <br>
+            <p>Idli, Dosa, Breakfast</p>
+
+        </div>
+        </div>
+        <div class="box">
+        <a href="./vantilu.html"><img src="./Images/Restaurants/vantilu.jpeg"></a>
+        <h3>Vantillu</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <br>
+            <p>Starters,biryani,tandoori</p>
+
+        </div>
+        </div>
+        <div class="box">
+        <a href="./platform65.html"><img src="./Images/Restaurants/platform65.jpg"></a>
+        <h3>Platform 65</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <br>
+            <p>Starters,biryani,tandoori</p>
+
+        </div>
+        </div>
+        <div class="box">
+        <a href="./ada.html"><img src="./Images/Restaurants/aadab.png"></a>
+        <h3>Hotel Adaab</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <br>
+            <p>Starters,biryani,tandoori</p>
+
+        </div>
+        </div>
+        <div class="box">
+        <a href="./fishland.html"><img src="./Images/Restaurants/fishland.jpg"></a>
+        <h3>Fish Land</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <br>
+            <p>Starters,biryani,tandoori</p>
+
+        </div>
+        </div>
+        <div class="box">
+        <a href="./hitech.html"><img src="./Images/Restaurants/hitech.jpg"></a>
+        <h3>hitech</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <br>
+            <p>Starters,biryani,tandoori</p>
+
+        </div>
+        </div>
+        <div class="box">
+        <a href="./hotnspicy.html"><img src="./Images/Restaurants/hotnspicy.jpg"></a>
+        <h3>Hot N Spicy</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <br>
+            <p>Starters,biryani,tandoori</p>
+
+        </div>
+        </div>
+        <div class="box">
+        <a href="./mughal.html"><img src="./Images/Restaurants/mughal.jpg"></a>
+        <h3>Mughal Restaurants</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <br>
+            <p>Starters,biryani,tandoori</p>
+
+        </div>
+        </div>
+        <div class="box">
+        <a href="./ksbakers.html"><img src="./Images/Restaurants/ksbakers.png"></a>
+        <h3>KS Bakers</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <br>
+            <p>Starters,biryani,tandoori</p>
+
+        </div>
+        </div>
+        
+
+        </div>
+        </section>
     
-    <tr>
-        <td align="center"><a href="./fishland.html"><img src="./Images/Restaurants/fishland.jpg" height="180"><h4>Fish Land</h4><p>Starters,biryani,tandoori</p><span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>4 </a></td>
-        <td align="center"><a href=".//hitech.html"><img src="./Images/Restaurants/hitech.jpg" height="180"><h4>Hi-Tech Bawarchi</h4><p>Starters,biryani,tandoori</p><span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>3 </a></td>
-        <td align="center"><a href="./hotnspicy.html"><img src="./Images/Restaurants/hotnspicy.jpg" height="180"><h4>Hot n Spicy</h4><p>Starters,biryani,tandoori</p><span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>3</a></td>
-        <td align="center"><a href="./mughal.html"><img src="./Images/Restaurants/mughal.jpg" height="180"><h4>Mughal Restaurant</h4><p>Starters,biryani,tandoori</p><span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>4 </a></td>
-
-    </tr>
-    <tr>
-        <td align="center"><a href="./ksbakers.html"><img src="./Images/Restaurants/ksbakers.png" height="180"><h4>KS Bakers</h4><p>Starters,biryani,tandoori,tea</p><span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>5</a></td>
-  
-
-
-    </tr>
-</table>
-    </div>
 
 </section>
 <div id="about" class="about">
@@ -348,8 +457,11 @@
     function closeNav(){
         document.getElementById("about").style.width = "0%";
     }
-   
-       
+    var preloader = document.getElementById("loader");
+    
+    function myloader(){
+        preloader.style.display = "none";
+    }
     </script>
     
     <!--JavaScript ends -->

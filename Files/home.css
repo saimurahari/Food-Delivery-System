@@ -656,6 +656,79 @@ form .btn button:hover{
     color:white;
 
 }
+.loader-container{
+    
+    position:fixed;
+    top:0;left:0;
+    z-index: 10000;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    
+
+}
+.loader-container.fade-out{
+    top: -120%;
+}
+section h1{
+    margin-left: 105px;
+    font-size: 30px;
+    color:orangered;
+}
+
+.barb{
+    margin-left: 100px;
+
+}
+.barb .box-container{
+    
+    align-items: center;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
+    gap:5.5rem;
+}
+.barb .box-container .box{
+    cursor: pointer;
+    margin-left: 2.5rem;
+    font-size: 1.2rem;
+    padding:2.5rem;
+    align-items: center;
+    background: #fff;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    
+}
+.barb .box-container .box:hover{
+    transform: scale(1.1);
+}
+.barb .box-container .box img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    
+}
+.barb .box-container .box span{
+    font-size: 20px;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    text-decoration: none;
+    background: orangered;
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+    color:white;
+}
 
 
 
