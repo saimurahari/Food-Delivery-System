@@ -729,7 +729,45 @@ section h1{
     padding: .8rem 3rem;
     color:white;
 }
+.add .add-container {
+    margin-top:50px;
+}
+.add .add-container img{
+    margin-top: 50px;
+    margin-left: 1100px;
+    height:400px
+}
+.add .add-container .textimg{
+    margin-top: 150px;
+    text-transform: normal;
+    padding-left: 120px;
+    font-size:45px;
+    position: absolute;
+    color:rgb(78, 78, 78);
+    top: 8px; left: 16px;
+}
+.add .add-container .textbtn{
+    position: absolute;
+    top: 8px; left: 16px;
+    margin-top:200px;
+    margin-left: 400px;
+    
+}
+button{
+    cursor: pointer;
+    background-color: orangered;
+    padding:15px;
+    font-size: 18px;
+    border:none;
+    color:white;
+    border-radius:5px;
+}
 
+button:hover{
+    color:orangered;
+    border:2px solid #666;
+    background-color: white;
+}
 
 
 
@@ -861,6 +899,42 @@ section h1{
         margin: -50px auto 10px; 
     
     }
+    .add .add-container img{
+        margin-top: 50px;
+        margin-left: 400px;
+        height:400px
+    }
+    .add .add-container .textimg{
+        margin-top: 150px;
+        text-transform: normal;
+        padding-left: 120px;
+        font-size:25px;
+        position: absolute;
+        color:rgb(78, 78, 78);
+        top: 8px; left: 16px;
+    }
+    .add .add-container .textbtn{
+        position: absolute;
+        top: 8px; left: 16px;
+        margin-top:200px;
+        margin-left: 400px;
+        
+    }
+    button{
+        margin-top: 20px;
+        cursor: pointer;
+        background-color: orangered;
+        padding:12px;
+        font-size: 18px;
+        border:none;
+        color:white;
+        border-radius:5px;
+    }
+    button:hover{
+        color:orangered;
+        border:2px solid #666;
+        background-color: white;
+    }
     .footer{
         background: #24262b;
         padding: 50px 0;
@@ -948,9 +1022,163 @@ section .restaurants table td{
 
     
 }
-@media (max-width: 991px){
+@media (max-width:1200px){
     html{
         font-size: 50%;
 
     }
+    
+    .add .add-container img{
+        margin-top: 50px;
+        margin-left: 450px;
+        height:400px
+    }
+    .add .add-container .textimg{
+        margin-top: 150px;
+        text-transform: normal;
+        padding-left: 120px;
+        font-size:25px;
+        position: absolute;
+        color:rgb(78, 78, 78);
+        top: 8px; left: 16px;
+    }
+    .add .add-container .textbtn{
+        position: absolute;
+        top: 8px; left: 16px;
+        margin-top:200px;
+        margin-left: 400px;
+        
+    }
+    button{
+        margin-top: 20px;
+        cursor: pointer;
+        background-color: orangered;
+        padding:15px;
+        font-size: 15px;
+        border:none;
+        color:white;
+        border-radius:5px;
+    }
+    button:hover{
+        color:orangered;
+        border:2px solid #666;
+        background-color: white;
+    }
+}
+@media (max-width: 991px){
+    *{
+        margin:0;
+    padding: 0;
+    }
+    html{
+        font-size: 50%;
+
+    }
+    .add .add-container img{
+        margin-top: 50px;
+        margin-left: 450px;
+        height:400px
+    }
+    .add .add-container .textimg{
+        margin-top: 150px;
+        text-transform: normal;
+        padding-left: 120px;
+        font-size:25px;
+        position: absolute;
+        color:rgb(78, 78, 78);
+        top: 8px; left: 16px;
+    }
+    .add .add-container .textbtn{
+        position: absolute;
+        top: 8px; left: 16px;
+        margin-top:200px;
+        margin-left: 400px;
+        
+    }
+    button{
+        margin-top: 20px;
+        cursor: pointer;
+        background-color: orangered;
+        padding:15px;
+        font-size: 15px;
+        border:none;
+        color:white;
+        border-radius:5px;
+    }
+    button:hover{
+        color:orangered;
+        border:2px solid #666;
+        background-color: white;
+    }
+    
+    .footer{
+        background: #24262b;
+        padding: 50px 0;
+        width: 100%;
+        
+    }
+    .footer .container{
+        background:#24262b;
+        width:100%;
+        
+    }
+    .footer-col h4{
+        cursor: default;
+        font-size: 11.5pt;
+        font-weight: normal;
+        color: orangered;
+        padding-bottom: 10px;
+    }
+    .footer-col ul a
+{
+    font-size:25px;
+    color:orangered;
+}
+.footer-col ul i{
+    font-size:25px;
+    color:orangered;
+}
+.footer-col ul span{
+    cursor:pointer;
+    font-size:20px;
+    font-weight:bold;
+    color:white;
+}
+
+.map ul a{
+    margin-left: 10px;
+    font-size: 15px;
+    color:white;
+}
+.footer-col .mail ul i{
+    padding-top: 20px;
+    
+    font-size:25px;
+}
+.footer-col .mail span{
+    
+    padding-left: 3px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.footer-col .map ul i{
+    padding-top:20px;
+    font-size: 20px;
+}
+.footer-col .map span{
+    font-weight: normal;
+    font-size:12px;
+    margin-left: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color:white;
+    
+}
+.footer-col ul li a{
+    line-height: 1.6;
+    font-size:12px;
+    text-decoration: none;
+    color:white;
+    
+}
 }
