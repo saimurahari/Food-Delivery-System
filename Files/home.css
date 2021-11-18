@@ -732,10 +732,35 @@ section h1{
 .add .add-container {
     margin-top:50px;
 }
+
 .add .add-container img{
     margin-top: 50px;
     margin-left: 1100px;
     height:400px
+}
+
+.container-grocery {
+    position: relative;
+  }
+  
+  /* Bottom right text */
+  .text-block {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: rgb(61, 61, 61);
+    padding-left: 150px;
+    padding-right: 20px;
+  }
+.text-block h2{
+    font-size: 55px;
+}
+.text-block h4{
+    font-size: 25px;
+}
+.text-block p{
+    margin-top:20px;
+    font-size:15px;
 }
 .add .add-container .textimg{
     margin-top: 150px;
@@ -746,12 +771,27 @@ section h1{
     color:rgb(78, 78, 78);
     top: 8px; left: 16px;
 }
+
 .add .add-container .textbtn{
     position: absolute;
     top: 8px; left: 16px;
     margin-top:200px;
     margin-left: 400px;
+   
     
+}
+.ordergrocery{
+    margin-top:20px;
+}
+.orderg{
+    background:orangered;
+    border:none;
+    border-radius: 5px;
+    font-size: 15px;
+    text-decoration: none;
+    color:white;
+    margin-top: 80px;
+    padding:8px;
 }
 button{
     cursor: pointer;

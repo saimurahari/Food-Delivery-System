@@ -88,9 +88,7 @@
  <img src="./Images/banner/burger banner.jpg">
  <div class="textimg"><h2>30% off on your<br> first order</h2>
  <a href="./ksbakers.html"><button class="ordr">Order Now</button></a></div>
- <div class="textbtn">
  
- </div>
  </div>
 </div>
 <!--Add ends-->
@@ -119,6 +117,19 @@
     <a href="./dominos.html"><img src="./Images/Restaurants/dominos.jpg" height="150"><h4>Domino's</h4><p>Pizza, Burger</p></a>
     <a href="./vantilu.html"><img src="./Images/Restaurants/vantilu.jpeg" height="150"><h4>Vantillu</h4><p>tandoori, biryani, Starters</p></a>
     <a href="./platform65.html"><img src="./Images/Restaurants/platform65.jpg" height="150"><h4>Platform65</h4><p>tandoori, biryani, Starters</p></a>
+</div>
+<div class="container-grocery">
+  <img src="./Images/banner/grocery-delivery.png" alt="Norway" style="width:100%;">
+  <div class="text-block">
+    <h2>Chotu!</h2>
+    <h4>Anything you need, delivered</h4>
+    <p>Get your grocery, meat, vegetables at your door step<br>
+    Stay Home and Enjoy our services.</p>
+    <div class="ordergrocery">
+  <a href="https://api.whatsapp.com/send?phone=+917717406841&text=I wanted to order grocery/meat/vegetables" class="orderg" onclick="mygrocery()"><i class="fab fa-whatsapp"></i> Order Now</a>
+  </div>
+  </div>
+  
 </div>
 
 <!--Restaurants-->
@@ -473,6 +484,9 @@
     
     function myloader(){
         preloader.style.display = "none";
+    }
+    function mygrocery(){
+        confirm("This will redirect you to whatsapp click ok to continue");
     }
     </script>
     
